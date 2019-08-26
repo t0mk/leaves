@@ -1,2 +1,3 @@
-github.com/dmitryikh/leaves v0.0.0-20190329211217-3fa8b3bce36e h1:G0KYbhdlVArkiY3EEdCIm2C3bs6T6po4QCrLprJ9A0I=
 github.com/dmitryikh/leaves v0.0.0-20190329211217-3fa8b3bce36e/go.mod h1:wzMig9tMIJB8HsxXHppa9yRPo8BpO0eBM/Z4xnaohCQ=
+github.com/t0mk/leaves v0.0.0-20190329211217-3fa8b3bce36e h1:G0KYbhdlVArkiY3EEdCIm2C3bs6T6po4QCrLprJ9A0I=
+github.com/t0mk/leaves v0.0.0-20190329211217-3fa8b3bce36e/go.mod h1:wzMig9tMIJB8HsxXHppa9yRPo8BpO0eBM/Z4xnaohCQ=
