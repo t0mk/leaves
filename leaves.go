@@ -17,6 +17,7 @@ type ensembleBaseInterface interface {
 	NRawOutputGroups() int
 	NFeatures() int
 	Name() string
+	FeatureNames() []string
 	adjustNEstimators(nEstimators int) int
 	predictInner(fvals []float64, nEstimators int, predictions []float64, startIndex int)
 	resetFVals(fvals []float64)
