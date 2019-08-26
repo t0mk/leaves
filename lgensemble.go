@@ -15,6 +15,7 @@ type lgEnsemble struct {
 	// averageOutput = true means that trees predictions should be averaged (like in random forest)
 	// NOTE: LightGBM original implementation always divides result by NEstimators() if average_output set.
 	// `leaves` implementation divides result by nEstimators (adjusted number of trees used for prediction)
+	featureNames  []string
 	averageOutput bool
 }
 
@@ -24,6 +25,10 @@ func (e *lgEnsemble) NEstimators() int {
 
 func (e *lgEnsemble) NRawOutputGroups() int {
 	return e.nRawOutputGroups
+}
+
+func (e *lgEnsemble) FeatureNames() []string {
+	return e.featureNames
 }
 
 func (e *lgEnsemble) NFeatures() int {

@@ -329,6 +329,12 @@ func LGEnsembleFromReader(reader *bufio.Reader, loadTransformation bool) (*Ensem
 		e.averageOutput = true
 	}
 
+	featureNamesStr, isFound := params["feature_names"]
+	if !isFound {
+		return nil, fmt.Errorf("no feature_names found")
+	}
+	e.featureNames = strings.Split(featureNamesStr, " ")
+
 	treeSizesStr, isFound := params["tree_sizes"]
 	if !isFound {
 		return nil, fmt.Errorf("no tree_sizes field")
