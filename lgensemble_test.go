@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/dmitryikh/leaves/util"
+	"github.com/t0mk/leaves/util"
 )
 
 func TestReadLGTree(t *testing.T) {
